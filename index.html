@@ -1,16 +1,17 @@
 <html>
-<script src=”https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-
-<body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs>
-      <a-marker preset="hiro">
-          <a-entity 
-            gltf-model="Models/REUSE.gltf">
-        </a-entity>
-      </a-marker>
-  <a-entity camera>
-  </a-entity>
-  </a-scene>
-</body>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <body style="margin : 0px; overflow: hidden;">
+      <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-entity
+                position="-5 -5 0"
+                scale="0.2 0.2 0.2"
+                rotation="-90 0 0"
+                gltf-model="Models/REUSE.gltf"
+            ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </body>
 </html>
