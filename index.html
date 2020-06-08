@@ -4,14 +4,10 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-                <a-marker preset='hiro'>
+                <a-marker preset='hiro'></a-marker>
                     <a-entity
-                	position="-5 -5 0"
-                	scale="0.2 0.2 0.2"
-                	rotation="-90 0 0"
                 	gltf-model="Models/REUSE.gltf"
            	 ></a-entity>
-                 </a-marker>
                  <a-entity camera> </a-entity>
 	</a-scene>
 </body>
